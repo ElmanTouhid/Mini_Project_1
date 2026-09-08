@@ -1,0 +1,47 @@
+.profile-photo{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+body{
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    color: #222;
+    line-height: 1.6;
+}
+
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1f2937;
+    color: white;
+}
+
+.site-header nav a{
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.site-header nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.about{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.about > div{
+    flex: 1;
+}

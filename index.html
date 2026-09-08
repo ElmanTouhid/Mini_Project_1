@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. Elman Touhid-Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>MD. Elman Touhid</h1>
+        <nav aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <img src="images/profile.jpg" alt="Photo of Md. Elman Touhid" class="profile-photo">
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    CS Student at International Islamic University Chittagong <br>
+                    Currently exploring <br>
+                    Skilled in C/C++
+                </p>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>C / C++</li>
+                <li>HTML &amp; CSS</li>
+                <li>JavaScript</li>
+                <li>Git &amp; GitHub</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+        <section id="projects" class="projects"> 
+            <h2>Projects</h2>
+            <article class="project">
+                <h3>CircuitPal</h3>
+                <p>CircuitPal is a self-contained embedded device that packs five useful applications into a 128×64 OLED
+                    display,powered by an ESP32.<br> On first boot it launches a captive-portal WiFi setup page so
+                    you can connect to your network without touching any code.<br> Credentials are saved to NVS flash
+                    and reused automatically on every subsequent boot.</p>
+            </article>
+
+            <article class="project">
+                <h3>CGPA-Stats</h3>
+                <p>A robust, console-based management system developed in Pure C.<br> This project was designed for a
+                    First Year University Group Project to demonstrate a deep understanding of structural programming,
+                    file-based persistence, and interactive CLI design.</p>
+            </article>
+            </section>
+            <section id="contact" class="contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:elmantouhid09@gmail.com">elmantouhid09@gmail.com</a></p>
+                <form>
+                    <div>
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required> </textarea>
+                    </div>
+             
+                <button type="submit">Send</button>
+
+                </form>
+               
+            </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Md. Elman Touhid. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
