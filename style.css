@@ -11,6 +11,10 @@ body{
     line-height: 1.6;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 @media (max-width: 480px) {
   .site-header {
     flex-direction: column;
