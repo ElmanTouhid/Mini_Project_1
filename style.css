@@ -45,3 +45,43 @@ main{
 .about > div{
     flex: 1;
 }
+
+.skills{
+    margin-bottom: 2rem;
+}
+
+.skills ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+}
+
+.skills li{
+    background-color: #e5e7eb;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+}
+
+.projects{
+    margin-bottom: 2rem;
+}
+
+.projects{
+    border-left: 4px solid #1f2937;
+    padding: 0.5rem 0 0 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.project h3{
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+}
+ 
