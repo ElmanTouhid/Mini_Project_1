@@ -83,5 +83,35 @@ main{
 .contact form{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
 }
- 
+
+.contact label{
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.contact button{
+    align-self: flex-start;
+    background-color: #1f2937;
+    color; white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact button:hover{
+    background-color: #374151;
+}
