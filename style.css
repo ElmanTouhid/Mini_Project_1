@@ -19,6 +19,14 @@ body{
   }
 }
 
+  .site-header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+
+
 .site-header nav a{
     color: white;
     margin-left: 1rem;
