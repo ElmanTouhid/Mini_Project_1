@@ -4,11 +4,13 @@
     object-fit: cover;
     border-radius: 50%;
 }
-body{
-    font-family: system-ui, sans-serif;
-    margin: 0;
-    color: #222;
-    line-height: 1.6;
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  color: #e5e7eb;
+  line-height: 1.6;
+  background-color: #111827;
 }
 
 *, *::before, *::after {
@@ -49,11 +51,17 @@ body{
     text-decoration: underline;
 }
 
-main{
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1f2937;
+  border-radius: 8px;
 }
+
+
+
 .about{
     display: flex;
     gap: 2rem;
@@ -77,11 +85,12 @@ main{
     padding: 0;
 }
 
-.skills li{
-    background-color: #e5e7eb;
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
-    font-size: 0.9rem;
+.skills li {
+  background-color: #e5e7eb;
+  color: #111827;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
 }
 
 .projects{
@@ -141,4 +150,12 @@ main{
 }
 .contact button:hover{
     background-color: #374151;
+}
+
+.email-link {
+  color: white;
+}
+
+.email-link:hover {
+  color: #9ca3af;
 }
