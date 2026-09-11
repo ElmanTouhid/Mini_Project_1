@@ -51,12 +51,12 @@ body {
     text-decoration: underline;
 }
 
-
 main {
   max-width: 900px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #1f2937;
+  background-color: #fdf6e3;
+  color: #222;
   border-radius: 8px;
 }
 
@@ -153,9 +153,9 @@ main {
 }
 
 .email-link {
-  color: white;
+  color:#1f2937;
 }
 
 .email-link:hover {
-  color: #9ca3af;
+  color:  #4b5563;
 }
