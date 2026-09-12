@@ -40,7 +40,7 @@
                 <li>Problem Solving</li>
             </ul>
         </section>
-        <section id="projects" class="projects"> 
+        <section id="projects" class="projects">
             <h2>Projects</h2>
             <article class="project">
                 <h3>CircuitPal</h3>
@@ -56,33 +56,72 @@
                     First Year University Group Project to demonstrate a deep understanding of structural programming,
                     file-based persistence, and interactive CLI design.</p>
             </article>
-            </section>
-            <section id="contact" class="contact">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:elmantouhid09@gmail.com" class="email-link">elmantouhid09@gmail.com</a></p>
-                <form>
-                    <div>
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" require                    d>
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" required>
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" required> </textarea>
-                    </div>
-             
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:elmantouhid09@gmail.com" class="email-link">elmantouhid09@gmail.com</a></p>
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" require d>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required> </textarea>
+                </div>
+
                 <button type="submit">Send</button>
 
-                </form>
-               
-            </section>
+            </form>
+
+        </section>
     </main>
     <footer>
         <p>&copy; 2026 Md. Elman Touhid. All rights reserved.</p>
     </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+        const SUPABASE_URL = "https://vzyhiznipryrzwlncbgw.supabase.co";
+        const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ6eWhpem5pcHJ5cnp3bG5jYmd3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkyMzgxNjcsImV4cCI6MjEwNDgxNDE2N30.dRfdoLLqbo6caYUyknRTMgLAhj50fYd3HVpP0v2-FPE";
+
+        const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        const form = document.querySelector('.contact form');
+
+        form.addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const { error } = await supabaseClient
+                .from('Contact_submissions')
+                .insert([{ name, email, message }]);
+
+            if (error) {
+                alert('Something went wrong. Please try again.');
+                console.error(error);
+            } else {
+                alert('Thanks! Your message has been sent.');
+                form.reset();
+            }
+        });
+
+
+
+
+    </script>
+
+
+
 </body>
 
 </html>
